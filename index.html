@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web FIltter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm bg-body rounded w-100"
+        style= "background-color: #fff;   height: 75px; position: fixed; z-index: 10000;">
+        <div class="container ">
+            <a class="navbar-brand fw-bold fs-4" style="color: #0517FF;" href="#">
+                <img src="assets/logo.png" alt="" width="30" height="24"
+                    class="d-inline-block align-text-middle">
+                PT.SUPRAINDO MULTI SEJAHTERA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="arrow-icon d-none" id="arrowIcon">
+                    <i class="bi bi-arrow-right"></i> <!-- Gunakan ikon panah yang diinginkan -->
+                </div>
+                <ul class="navbar-nav ms-auto fw-bold fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" style="color:#0517FF;">
+                            Home <i class="bi bi-house-door ms-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About <i class="bi bi-info-circle ms-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">
+                            Product <i class="bi bi-box-seam ms-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="achivment.html">
+                            Achievement <i class="bi bi-trophy ms-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact Us <i class="bi bi-trophy ms-2"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Copyright Text -->
+                <div class="copyright-text d-none">
+                    &copy; 2023 PT. Supraindo Multi Sejahtera. All rights reserved.
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- End navbar -->
+
+    <!-- First page -->
+    <section id="home" class=" align-items-center" style="min-height: 30vh;">
+        <div class="container-core">
+            <div class="row justify-content-left text-left">
+                <div class="col col-sm-7 " style="text-align: left; padding-top: 105px; padding-bottom: 20px; ">
+                    <h1> Menyediakan solusi dan peralatan berkualitas untuk industri</h1>
+                    <p div class="col col-sm-7">
+                        Kami adalah Perusahaan Penyedia Segala jenis Filter After Market yang bisa Menggantikan Product
+                        OEM dengan Kualitas yang Setara dengan OEM.
+                    </p>
+                    <div class="slide-image">
+                        <img class="filter1 active" src="assets/filter1.png" alt="">
+                        <img class="filter1 " src="assets/filter2.png" alt="">
+                        <img class="filter1 " src="assets/filter3.png" alt="">
+                    </div>
+                    <a href="#buttonawal" class="btn btn-light custom-btn fw-bold "
+                        style="width: 170px; border-radius: 60px; color: var(--grey); position: relative;">Explore or
+                        work</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="aww " style="position: relative;">
+            <img src="assets/logowin.png" class="img-fluid" loading="lazy">
+        </div>
+
+
+        <!-- Asset figma -->
+        <svg class="svglogo" width="100%" height="auto" viewBox="0 0 1526 300" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0 48.7366V300H1526V62.3184C1510.76 57.7911 1419.28 41.332 1241.93 25.3469C1064.59 9.36179 786.893 11.2994 575.307 1.20023C411.074 -6.63879 123.711 25.6151 0 48.7366Z"
+                fill="url(#paint0_linear_36_11)" />
+            <path
+                d="M0 48.7366V300H1526V62.3184C1510.76 57.7911 1419.28 41.332 1241.93 25.3469C1064.59 9.36179 786.893 11.2994 575.307 1.20023C411.074 -6.63879 123.711 25.6151 0 48.7366Z"
+                fill="url(#paint1_linear_36_11)" />
+            <path
+                d="M0 300H136.459L1526 287.907V75.7762C1445.12 70.2336 1245.65 59.5515 1094.85 61.1639C906.361 63.1794 632.913 104.497 450.791 123.14C305.094 138.055 89.5565 225.427 0 267.248V300Z"
+                fill="url(#paint2_linear_36_11)" />
+            <path
+                d="M520.58 218.203C386.732 219.798 210.207 273.24 142.833 299H1526V124.469C1308.6 116.093 1103.22 145.576 1027.71 161.364C914.434 179.646 654.428 216.607 520.58 218.203Z"
+                fill="#444154" />
+            <defs>
+                <linearGradient id="paint0_linear_36_11" x1="0" y1="150" x2="1526"
+                    y2="150" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.0328" stop-color="#009EDB" stop-opacity="0.81" />
+                    <stop offset="1" stop-color="#009EDB" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_36_11" x1="0" y1="150" x2="1526"
+                    y2="150" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.0328" stop-color="#009EDB" stop-opacity="0.81" />
+                    <stop offset="1" stop-color="#009EDB" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_36_11" x1="-6.24699e-08" y1="150" x2="1526"
+                    y2="150" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.04" stop-color="#107CC1" stop-opacity="0.8" />
+                    <stop offset="1" stop-color="#107CC1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+    <!-- End first page -->
+
+    <!-- Our Service -->
+    <section id="our-services" class=" ms-auto">
+        <div class="container-fluid px-5  " style="position: relative;"> <!-- Menambahkan padding horizontal -->
+            <h2 class="text-left fw-bold">OUR SERVICES</h2>
+            <hr class="hr-blue mb-5" />
+
+            <div class="row">
+                <!-- Capability Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">CAPABILITY</h5>
+                    <ul class="list-unstyled">
+                        <li>FILTER OLI</li>
+                        <li>FILTER UDARA</li>
+                        <li>FILTER SOLAR</li>
+                        <li>FILTER GAS</li>
+                        <li>FILTER STRAINER</li>
+                        <li>FILTER DUST COLLECTOR</li>
+                        <li>FILTER BAG</li>
+                        <li>FILTER DUPLEX</li>
+                        <li>FILTER OIL/AIR SEPARATOR</li>
+                        <li>FILTER AIR DRYER</li>
+                        <li>FILTER COALESCER</li>
+                        <li>FILTER BASKER</li>
+                        <li>FILTER CANDEL</li>
+                    </ul>
+                </div>
+
+                <!-- Otomotive dan Heavy Duty Section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">OTOMOTIVE AND HEAVY DUTY</h5>
+                    <ul class="list-unstyled">
+                        <li>SUZUKI</li>
+                        <li>TOYOTA</li>
+                        <li>DAIHATSU</li>
+                        <li>HINO</li>
+                        <li>HYUNDAI</li>
+                        <li>FORD</li>
+                        <li>BMW</li>
+                        <li>WULING</li>
+                        <li>MITSUBISHI</li>
+                        <li>HONDA</li>
+                        <li>NISSAN</li>
+                        <li>ISUZU</li>
+                        <li>KOMATSU</li>
+                    </ul>
+                </div>
+
+                <!-- Trading Section -->
+                <div class="col-lg-4 col-md-6 mb-4 ms-5">
+                    <h5 class="fw-bold ms-2">TRADING</h5>
+                    <ul class="list-unstyled ms-2">
+                        <li>VALVE ALL ITEM</li>
+                        <li>PUMP</li>
+                        <li>SPAREPART KOMPRESSOR</li>
+                        <li>SAMPLE COOLER</li>
+                        <li>JASA OVERHOUL KOMPRESSOR</li>
+                        <li>HVAC</li>
+                        <li>HOUSING FILTER MATERIAL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blue ">
+                <img src="assets/bluelogo.png" alt="Blue Logo" class="blue-logo" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!--  End Our Service -->
+
+
+    <!-- Our prduct -->
+    <!-- <section id="our-product" class=" mt-5">
+        <div class="container-fluid px-7 ">
+          <h2 class="text-center fw-bold">OUR PRODUCT</h2>
+          <hr class="hr-blue " />
+          
+      </section> -->
+
+    <section class="our-product mt-5 mb-5">
+        <h2>Our Product</h2>
+        <div class="underline mt-5 mb-5"></div>
+
+        <div class="carousel-container">
+            <div class="row g-0 carousel-content">
+                <!-- Card Group 1 -->
+                <div class="col-sm-3 row g-2 card-wrapper c1">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 1</h5>
+                            
+                            <p class="card-text scrollable-text  mt-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis beatae distinctio vel eum minima neque dolores quia at fugiat rem, natus animi et id, suscipit recusandae officia. Inventore, quibusdam a.</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 row g-2 card-wrapper c1">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 2</h5>
+                            <p class="card-text  scrollable-text mt-0 mb-5">Sampel kalo teks ga lebih dari 3 baris</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 row g-2 card-wrapper c1">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 3</h5>
+                            <p class="card-text scrollable-text mt-0 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum possimus eius quae ex natus dolor officiis nam debitis, eaque voluptate beatae fuga sapiente temporibus incidunt quibusdam nihil nisi! Assumenda, perspiciatis.</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Group 2 (hidden by default) -->
+                <div class="col-sm-3 row g-2 card-wrapper c1" style="display: none;">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 4</h5>
+                            <p class="card-text  scrollable-text mt-0 mb-5">ahh 2.</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 row g-2 card-wrapper c1" style="display: none;">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 5</h5>
+                            <p class="card-text scrollable-text mt-0 mb-5">This is the second card in group 2.</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 row g-2 card-wrapper c1" style="display: none;">
+                    <div class="card card-custom-size">
+                        <img src="assets/filter2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Card 5</h5>
+                            <p class="card-text scrollable-text mt-0 mb-5">This is the second card in group 2.</p>
+                            <a href="#" class="btn btn-primary btn-right">Price:ALL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button id="prev" class="carousel-nav prev">
+                <i class="bi bi-chevron-left"></i> <!-- Ikon Bootstrap untuk panah kiri -->
+            </button>
+            <button id="next" class="carousel-nav next">
+                <i class="bi bi-chevron-right"></i> <!-- Ikon Bootstrap untuk panah kanan -->
+            </button>
+
+            <!-- Navigation Dots -->
+            <div class="carousel-dots mt-3">
+                <div class="dots-container">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                <button type="button" class=" btn btn-secondary" id="myButton">ALL PRODUCT</button>
+            </div>
+        </div>
+    </section>
+    <!-- end our product -->
+
+    <!-- Contact person -->
+    <section class="contact-person mt-5 mb-5">
+        <div class="container">
+            <h2 class="text-center">Contact Person</h2>
+            <div class="underline mt-5 mb-5"></div>
+
+            <div class="row justify-content-center">
+                <!-- Profile 1 -->
+                <div class="col-md-3 profile-card">
+                    <img src="assets/han.png" alt="Dendi Supardi" loading="lazy">
+                    <h5 class="mt-3 fw-bold pers">Dendi Supardi</h5>
+                    <p>deddysmd03@gmail.com</p>
+                    <p>+62 813 1516 6056</p>
+                </div>
+
+                <!-- Profile 2 -->
+                <div class="col-md-3 profile-card">
+                    <img src="assets/feb.png" alt="Wanda Setiadi" loading="lazy">
+                    <h5 class="mt-3 fw-bold pers">Wanda Setiadi</h5>
+                    <p>supraindows@gmail.com</p>
+                    <p>+62 813 8619 5603</p>
+                </div>
+
+                <!-- Profile 3 -->
+                <div class="col-md-3 profile-card">
+                    <img src="assets/tar.png" alt="Warno Suwarno" loading="lazy">
+                    <h5 class="mt-3 fw-bold pers">Warno Suwarno</h5>
+                    <p>warnosuwarno.gsm@gmail.com</p>
+                    <p>+62 821 2219 0236</p>
+                </div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div class="carousel-dotss ">
+                <span class="dott active"></span>
+                <span class="dott"></span>
+                <span class="dott"></span>
+            </div>
+        </div>
+    </section>
+    <!-- End contact person -->
+    <!-- Footer -->
+    <section class="info-section py-4 bg-light">
+        <div class="container">
+            <div class="row foot ">
+                <!-- Company Information -->
+                <div class="col-md-6 infoo">
+                    <h5 class="pt">PT. SUPRAINDO MULTI SEJAHTERA</h5>
+                    <div class="info-item aww">
+                        <p><i class="bi bi-geo-alt "></i>BIZPOINT Point 1 Blok L No 16 Kel.Sukamulya Kec.Cikupa
+                            TANGERANG
+                            <!-- <span class="first-line">BIZPOINT Point 1 Blok L No 16 Kel. Sukamulya</span>
+                      <br>
+                      <span class="second-line">Kec. Cikupa TANGERANG</span> -->
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-telephone"></i> 021-59647006
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-envelope"></i> supraindomulti@gmail.com
+                    </div>
+                </div>
+
+                <!-- Navigation and Social Media -->
+                <div class="col-md-6 d-flex align-items-start">
+                    <div class="navigation mb-4">
+                        <h5>NAVIGATION</h5>
+                        <div class="nav-links">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="product.html">Product</a>
+                            <a href="achivment.html">Achievement</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="social-media ms-auto text-end">
+                        <h5>FOLLOW US</h5>
+                        <div class="social-media-icons">
+                            <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Logo -->
+            <div class="row mt-4">
+                <div class="col-md-12 d-flex justify-content-end " style="position: relative;">
+                    <img src="assets/bluelogo.png" alt="Wintrust Filtration" loading="lazy" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End footerr -->
+
+    <script src="js/main.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
