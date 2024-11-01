@@ -1,20 +1,27 @@
-const images = document.querySelectorAll('.filter1');
-let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".heroo-right .animationimg");
+    let currentImageIndex = 0;
 
-function showNextImage() {
-  images[currentIndex].classList.remove('active');  // Hilangkan gambar aktif saat ini
-  currentIndex = (currentIndex + 1) % images.length;  // Pergi ke gambar berikutnya
-  images[currentIndex].classList.add('active');  // Tampilkan gambar berikutnya
-}
+    // Tampilkan hanya gambar pertama pada awal
+    images.forEach((img, index) => {
+      img.classList.toggle("active", index === 0);
+    });
 
-// Ganti gambar setiap 5 detik
-setInterval(showNextImage, 3000);
+    // Fungsi untuk mengubah gambar dengan animasi
+    function changeImage() {
+      // Hilangkan kelas aktif dari gambar saat ini
+      images[currentImageIndex].classList.remove("active");
+      
+      // Pindah ke gambar berikutnya
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      
+      // Tambahkan kelas aktif pada gambar berikutnya
+      images[currentImageIndex].classList.add("active");
+    }
 
-// Pastikan gambar pertama tampil saat halaman dimuat
-window.onload = function() {
-  images[currentIndex].classList.add('active');
-};
-
+    // Ubah gambar setiap 3 detik
+    setInterval(changeImage, 3000);
+  });
 
 
 // Pengkondisian icon panah 

@@ -92,7 +92,7 @@ a .navbar-brand {
 
   .about-section {
     position: relative;
-    height: 0vh;
+   
     overflow: hidden;
   }
 
@@ -102,7 +102,7 @@ a .navbar-brand {
   } */
 
   
-  .description-section {
+.description-section {
     padding:  0;
 }
 
@@ -123,6 +123,9 @@ a .navbar-brand {
 
 
 /* Visi Misi */
+.bi-check-all {
+    font-size: 1.5em; /* Sesuaikan ukuran sesuai keinginan */
+}
 
 .vision-mission-section {
     padding: 50px 0;
@@ -144,7 +147,7 @@ a .navbar-brand {
     justify-content: center;
    
     width: 80%;
-    min-height: 185px;
+    min-height: 191px;
     display: flex;
     margin-top: 50px;
     text-align: center;
@@ -155,18 +158,22 @@ a .navbar-brand {
 }
 
 .border-custom{
-    
     border: 1px solid var(--dark);
 
 }
 
 .vision-box{
-    
-    min-height: 185px;
-    margin-top: 50px;
+    justify-content: center;
+   
     width: 80%;
+    min-height: 258px;
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    text-align: left; /* Mengatur misi agar tampil rata kiri */
+    display: block;
     margin-left: auto;
-    margin-right: auto; /* Untuk memusatkan kotak */
+    margin-right: auto;/* Untuk memusatkan kotak */
 }
 .mission-box {
     text-align: left; /* Mengatur misi agar tampil rata kiri */
@@ -186,9 +193,12 @@ a .navbar-brand {
 
 
 /* Footer */
+
 .info-section {
-    margin-top: 100px;
+    justify-content: space-between;
+    margin-top: 60px;
     background-color: #f2f2f2;
+    padding-bottom: 50px;
     padding: 100px;
     position: relative;
 }
@@ -232,6 +242,23 @@ a .navbar-brand {
 .nav-links a:hover {
     text-decoration: underline;
 }
+.foot-right {
+    display: flex;
+    justify-content: space-between; /* Bagi ruang antara Navigation dan Social Media */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.navigation {
+    flex: 1; /* Buat navigasi menempati ruang */
+}
+
+.social-media {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Rata kiri */
+}
 
 
 .social-media-icons a {
@@ -269,7 +296,18 @@ a .navbar-brand {
     font-size:2.5rem;
     color: #0517FF;
 }
+.copyrightt {
+    background-color: #f2f2f2;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.copyrightt p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
 
 
 
@@ -442,10 +480,26 @@ a .navbar-brand {
     text-align: left;
 }
 
+
 .vision-mission-section{
     width: 100%;
     margin-top: 20px;
 
+}
+
+
+.vision-box{
+    justify-content: center;
+   
+    width: 80%;
+    min-height: 190px;
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    text-align: left; /* Mengatur misi agar tampil rata kiri */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;/* Untuk memusatkan kotak */
 }
   
     
@@ -667,62 +721,72 @@ a .navbar-brand {
         margin: 10px auto 0;
     
 
-    }   
-    .description-section .container {
-        display: flex;
-        flex-direction: column;
+    }  
+    
+     
+
+    
+.description-section .col-md-6 img {
+    width: 100%; 
+    height: auto;  
+    border-radius: 10px !important; 
+    margin-bottom: 40px;
+}
+.vision-mission-section {
+    padding-top: 0;
+    margin-top: 20px;
+    margin-top: 0;
+}
+
+.vision-mission-section h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: flex-start;
+    justify-content: flex-start;
+}
+
+    .mission-box {
+        padding: 0 auto;
+        justify-content: center;
+        margin-top: 20px;
+        width: 80%;
+        min-height: 100px;
+      ; /* Untuk memusatkan kotak */
+    }
+    
+    .border-custom{
+        border: 1px solid var(--dark);
+    }
+    
+    .vision-box{
+        padding: 0 auto;
+        justify-content: center;
+        min-height: 100px;
+        margin-top: 20px;
+        width: 80%;
+        
     }
 
-    .description-section .row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .vision-box{
+        justify-content: center;
+        min-height: 140px; 
+        margin-right: auto;/* Untuk memusatkan kotak */
     }
-
-    .description-section .col-md-6 {
-        flex: 1;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .description-section .col-md-6 img {
-        width: 160px;
-        height: auto;
-        border-radius: 15px !important;
-    }
-
-    /* Make the description text scrollable */
-    .description-section .col-md-6:last-child {
-        max-height: 150px; /* Matches the image height */
-        overflow-y: auto;
-        padding-right: 15px;
-        text-align: left;
-    }
-
-    /* Scrollable text styling */
-    .scrollable-text {
-        max-height: 150px; /* Set max height to contain the text */
-        overflow-y: auto; /* Enable vertical scroll if text overflows */
-    }
-    .vision-mission-section .row {
-        flex-direction: row; /* Ensure boxes stay side-by-side */
-        gap: 10px;
-    }
-
-    .vision-box, .mission-box {
-        width: 45%; /* Set each box to 45% width to fit horizontally */
-        padding: 10px;
-        font-size: 0.9rem; /* Slightly smaller font for mobile */
-    }
+      
+   
+/* FOOTER */
    
 /* FOOTER */
 .info-section{
-    height: 80vh;
+    height: 65vh;
+    margin-top: 50px;
+}
+.info-section h5{
+    padding-bottom: 1rem;
 }
 
-
 .info-item{
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
     font-size: 11;
 }
 
@@ -737,6 +801,7 @@ a .navbar-brand {
 }
 .social-media{
     margin-left: 0;
+    padding-top: 1.4rem;
 }
 
 
@@ -770,4 +835,7 @@ a .navbar-brand {
     color: #6c757d;
     font-size: 0.8rem;
 }
-    }
+
+
+
+}

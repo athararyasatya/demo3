@@ -1061,18 +1061,18 @@ a .navbar-brand {
     left: -20vw;
 }
 
-
+   
 /* FOOTER */
 .info-section{
-    height: 70vh;
+    height: 65vh;
+    margin-top: 50px;
 }
-
 .info-section h5{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .info-item{
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
     font-size: 11;
 }
 
@@ -1083,10 +1083,11 @@ a .navbar-brand {
 }
 .info-section .row.foot .col-md-6 {
     width: 100%;
-    margin-bottom: 20px; /* Jarak antar kolom */
+    margin-bottom: 10px; /* Jarak antar kolom */
 }
 .social-media{
     margin-left: 0;
+    padding-top: 1.4rem;
 }
 
 
@@ -1120,6 +1121,5 @@ a .navbar-brand {
     color: #6c757d;
     font-size: 0.8rem;
 }
-    
     }
 
